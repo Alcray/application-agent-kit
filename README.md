@@ -2,7 +2,7 @@
 
 Turn one current CV into a private, reusable application system for jobs, degrees, scholarships, fellowships, grants, conferences, workshops, research schools, hackathons, and competitions.
 
-The kit creates the working data in **your Google Drive**, not in GitHub. It keeps a sourced ground-truth database, lane-specific tracker tabs, a separately tailored CV for every relevant opportunity, current materials, exact submitted Q&A archives, and a mandatory human review before any submission.
+The kit creates the working data in **your Google Drive**, not in GitHub. It keeps a sourced ground-truth database, lane-specific tracker tabs, a separately tailored CV for every relevant opportunity, current materials, exact submitted Q&A archives, scheduled status monitoring, and a mandatory human review before any submission.
 
 ## Copy this and give it to your AI agent
 
@@ -38,6 +38,9 @@ Requirements:
 - Never put my CV, personal facts, Google Drive links, or credentials in the
   cloned repository or any Git commit.
 - Do not submit any application during setup.
+- At the end, ask whether I want recurring application-status checks. If I do,
+  use the schedule-application-status-checks skill and ask for the frequency,
+  exact local time, timezone, and notification preference before scheduling.
 
 When setup is complete, give me links to the root folder, System Index,
 Ground Truth Database, tracker, and CV folder, plus a short list of anything
@@ -71,6 +74,7 @@ The tracker always has a dashboard and creates only the tabs you select. Each la
 - `tailor-application-cv` — creates and visually verifies a separate truthful CV for one opportunity, records what changed, and never overwrites the master.
 - `apply-person` — researches, fills, reviews, archives, and tracks a specific personal application. It always stops for a fresh, application-specific final authorization.
 - `check-application-status` — checks email or portals for decisions and required actions, then reconciles evidence with the tracker without replying or accepting anything.
+- `schedule-application-status-checks` — tests the checker, prevents duplicate schedules, and creates or manages a native recurring task at a confirmed time and timezone.
 
 ## Requirements
 
@@ -89,6 +93,7 @@ Use $skill-installer to install these paths from Alcray/application-agent-kit:
 - skills/tailor-application-cv
 - skills/apply-person
 - skills/check-application-status
+- skills/schedule-application-status-checks
 
 Then use $application-agent-setup to set up my private application system.
 ```
@@ -132,6 +137,22 @@ To reconcile outcomes:
 Use $check-application-status to check my applications and update the tracker.
 ```
 
+To schedule a quiet daily monitor:
+
+```text
+Use $schedule-application-status-checks to check my application statuses every
+day at 09:00 in Europe/Yerevan. Notify me only when something changes or I need
+to act.
+```
+
+## ChatGPT Go compatibility
+
+Eligible ChatGPT Go accounts can use ordinary time-based scheduled tasks, including daily checks at an exact time. Current task limits and availability remain account-dependent; review the [official scheduled-tasks documentation](https://help.openai.com/en/articles/10291617-tasks-in-chatgpt).
+
+Go does not support event-triggered Gmail tasks, so this kit defaults to a normal time-based daily check. The scheduled run can inspect Gmail or another connected source only when that app is available and authorized for the account and surface.
+
+The Plugin Directory is available across ChatGPT plans, but a particular plugin, skill, or app can still require a different plan or surface. Personal Skills in ChatGPT are generally documented for eligible managed workspaces. For a personal Go account, use this repository through Codex when Codex is included for the account, and verify that Google Drive, Sheets, email, and browser capabilities are actually available. See the current [ChatGPT Go](https://help.openai.com/en/articles/11989085-what-is-chatgpt-go.com), [plugin availability](https://help.openai.com/en/articles/20001256/), and [Codex plan](https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan) documentation.
+
 ## Development
 
 Run the repository checks:
@@ -140,7 +161,7 @@ Run the repository checks:
 python3 scripts/validate_repo.py
 ```
 
-The four skills are intentionally person-agnostic. Forks should keep private resource IDs and real applicant data out of Git.
+The five skills are intentionally person-agnostic. Forks should keep private resource IDs and real applicant data out of Git.
 
 ## License
 

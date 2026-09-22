@@ -27,7 +27,7 @@ Create a resumable, private source of truth that the other Application Agent ski
 7. Build the `Materials Inventory` for the selected lanes. Show which foundational files are present, missing, outdated, or optional, give the user the relevant Drive folders, and ask them to upload the useful missing items. Do not request government IDs, bank statements, tax records, or other high-risk documents during general setup.
 8. Ask for common missing facts in one grouped message. Ask only for fields relevant to the selected lanes. Do not collect sensitive demographic or identity data merely because some future form might request it.
 9. Write confirmed answers to the database as `Confirmed by user`, preserve their source and confirmation date, and log corrections in `Change Log` rather than erasing provenance.
-10. Finish by returning links to the root folder, System Index, Ground Truth Database, tracker, and CV folder. State which facts and materials remain missing.
+10. Finish by returning links to the root folder, System Index, Ground Truth Database, tracker, and CV folder. State which facts and materials remain missing. Offer to invoke `schedule-application-status-checks`; create no schedule until the user confirms a frequency, time, timezone, and notification preference.
 
 ## Resume and extension behavior
 

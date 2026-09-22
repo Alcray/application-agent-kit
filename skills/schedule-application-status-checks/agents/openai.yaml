@@ -1,0 +1,6 @@
+interface:
+  display_name: "Schedule Application Checks"
+  short_description: "Schedule recurring application status monitoring"
+  default_prompt: "Use $schedule-application-status-checks to check my application status every day."
+policy:
+  allow_implicit_invocation: true

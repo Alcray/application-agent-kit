@@ -14,6 +14,7 @@ SKILLS = {
     "application-agent-setup",
     "apply-person",
     "check-application-status",
+    "schedule-application-status-checks",
     "tailor-application-cv",
 }
 FORBIDDEN_TEXT = (

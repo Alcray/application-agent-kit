@@ -1,7 +1,7 @@
 {
   "name": "application-agent-kit",
-  "version": "0.2.0",
-  "description": "A privacy-first system for setting up, preparing, reviewing, tracking, and monitoring personal applications.",
+  "version": "0.3.0",
+  "description": "A privacy-first system for setting up, preparing, reviewing, tracking, and scheduling monitoring of personal applications.",
   "author": {
     "name": "Alcray",
     "url": "https://github.com/Alcray"
@@ -21,7 +21,7 @@
   "interface": {
     "displayName": "Application Agent Kit",
     "shortDescription": "Build and run your private application system.",
-    "longDescription": "Create a private Google Drive application workspace from a CV, prepare applications with a mandatory final-review checkpoint, and reconcile decisions from email with a lane-specific tracker.",
+    "longDescription": "Create a private Google Drive application workspace from a CV, tailor materials, prepare applications with a mandatory final-review checkpoint, and schedule evidence-based status monitoring.",
     "developerName": "Alcray",
     "category": "Productivity",
     "capabilities": [
