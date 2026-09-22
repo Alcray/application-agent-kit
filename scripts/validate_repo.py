@@ -17,10 +17,10 @@ SKILLS = {
 }
 FORBIDDEN_TEXT = (
     "[" + "TODO:",
-    "drive.google.com/",
-    "docs.google.com/",
-    "Alex Hayrapetyan",
-    "Alexan Hayrapetyan",
+    "drive.google" + ".com/",
+    "docs.google" + ".com/",
+    "Alex " + "Hayrapetyan",
+    "Alexan " + "Hayrapetyan",
 )
 
 
