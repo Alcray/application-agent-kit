@@ -1,0 +1,6 @@
+interface:
+  display_name: "Application Agent Setup"
+  short_description: "Build a private application workspace from a CV"
+  default_prompt: "Use $application-agent-setup to set up my private application system."
+policy:
+  allow_implicit_invocation: true

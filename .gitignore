@@ -1,0 +1,21 @@
+.DS_Store
+*.log
+__pycache__/
+.pytest_cache/
+.venv/
+
+# Private runtime data must never enter this repository.
+.application-agent/
+private/
+runtime/
+*.env
+.env*
+*.pdf
+*.doc
+*.docx
+*.xlsx
+*.csv
+*.eml
+*.mbox
+*.har
+cookies*

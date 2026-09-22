@@ -1,0 +1,6 @@
+interface:
+  display_name: "Apply Person"
+  short_description: "Prepare and track personal applications safely"
+  default_prompt: "Use $apply-person to prepare this application for my final review."
+policy:
+  allow_implicit_invocation: true

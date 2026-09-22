@@ -1,0 +1,39 @@
+{
+  "name": "application-agent-kit",
+  "version": "0.1.0",
+  "description": "A privacy-first system for setting up, preparing, reviewing, tracking, and monitoring personal applications.",
+  "author": {
+    "name": "Alcray",
+    "url": "https://github.com/Alcray"
+  },
+  "homepage": "https://github.com/Alcray/application-agent-kit#readme",
+  "repository": "https://github.com/Alcray/application-agent-kit",
+  "license": "MIT",
+  "keywords": [
+    "applications",
+    "jobs",
+    "phd",
+    "scholarships",
+    "fellowships",
+    "codex-skills"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Application Agent Kit",
+    "shortDescription": "Build and run your private application system.",
+    "longDescription": "Create a private Google Drive application workspace from a CV, prepare applications with a mandatory final-review checkpoint, and reconcile decisions from email with a lane-specific tracker.",
+    "developerName": "Alcray",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/Alcray/application-agent-kit",
+    "defaultPrompt": [
+      "Set up my private application system.",
+      "Prepare this application for final review.",
+      "Check my application statuses."
+    ],
+    "brandColor": "#2563EB"
+  }
+}

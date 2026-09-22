@@ -1,0 +1,6 @@
+interface:
+  display_name: "Check Application Status"
+  short_description: "Reconcile application email and tracker status"
+  default_prompt: "Use $check-application-status to check my application inbox and update my tracker."
+policy:
+  allow_implicit_invocation: true
