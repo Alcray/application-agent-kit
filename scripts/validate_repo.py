@@ -17,9 +17,10 @@ SKILLS = {
 }
 FORBIDDEN_TEXT = (
     "[" + "TODO:",
-    "13qCw2kHg6gE" + "G891CC8SdfMjbyqA4Suxc",
-    "1UPyqpCZoyPmniuG-eof" + "_ncZdk0Nq6j_2rPMvWT1cTSk",
-    "1RlLq2mcNKGhkMp5JEHlChy" + "PkspGGwQBdFJTZJnWQYrM",
+    "drive.google.com/",
+    "docs.google.com/",
+    "Alex Hayrapetyan",
+    "Alexan Hayrapetyan",
 )
 
 

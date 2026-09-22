@@ -58,6 +58,24 @@ Columns:
 
 `Label | URL | Purpose | Verification | Last Checked | Notes`
 
+## Materials Inventory
+
+Columns:
+
+`Material | Applicable Lanes | Priority | Status | Current File | Drive Link | Last Verified | Notes`
+
+Use `Required`, `Recommended`, or `Optional` for priority and `Current`, `Missing`, `Outdated`, or `Not applicable` for status. Seed only materials relevant to active lanes:
+
+- all lanes: current general CV or resume
+- jobs: role-specific resume, portfolio, and work samples when relevant
+- degrees: transcripts, degree certificates, research statement/proposal, writing sample, and reference-letter plan
+- scholarships/fellowships: transcripts, enrollment evidence, essays, references, and budget only when commonly required by the selected opportunities
+- grants: proposal, budget, host/support letter, and eligible-cost evidence
+- events/workshops: short bio, headshot, abstract/poster, and travel-funding materials when relevant
+- hackathons/competitions: portfolio/demo, team information, and submission artifacts
+
+Ask the user to upload useful foundational items to the appropriate private supporting-materials folder. Do not collect government IDs, bank statements, tax records, health records, or payment details during general setup. Handle a sensitive document only when a current application requires it and the user explicitly chooses to provide it.
+
 ## Reusable Answers
 
 Columns:

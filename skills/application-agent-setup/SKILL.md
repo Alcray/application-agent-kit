@@ -24,9 +24,10 @@ Create a resumable, private source of truth that the other Application Agent ski
 4. Give the user the link to `01 CVs & Resumes/General`, and ask them to upload their current CV or resume there. If a current CV already exists, show the candidate filename and ask whether to use it. Do not continue extraction until the user identifies the current file.
 5. Read [references/profile-schema.md](references/profile-schema.md). Extract supported facts with provenance into the Ground Truth Database. Use `Candidate` for ambiguous or inferred values and `Verified from source` only for exact statements supported by the CV.
 6. Present one compact confirmation block containing the extracted preferred name, possible legal given/family names, primary email, phone, current education, current role, and important links. Explicitly ask the user to confirm or correct the legal-name fields.
-7. Ask for common missing facts in one grouped message. Ask only for fields relevant to the selected lanes. Do not collect sensitive demographic or identity data merely because some future form might request it.
-8. Write confirmed answers to the database as `Confirmed by user`, preserve their source and confirmation date, and log corrections in `Change Log` rather than erasing provenance.
-9. Finish by returning links to the root folder, System Index, Ground Truth Database, tracker, and CV folder. State which facts or materials remain missing.
+7. Build the `Materials Inventory` for the selected lanes. Show which foundational files are present, missing, outdated, or optional, give the user the relevant Drive folders, and ask them to upload the useful missing items. Do not request government IDs, bank statements, tax records, or other high-risk documents during general setup.
+8. Ask for common missing facts in one grouped message. Ask only for fields relevant to the selected lanes. Do not collect sensitive demographic or identity data merely because some future form might request it.
+9. Write confirmed answers to the database as `Confirmed by user`, preserve their source and confirmation date, and log corrections in `Change Log` rather than erasing provenance.
+10. Finish by returning links to the root folder, System Index, Ground Truth Database, tracker, and CV folder. State which facts and materials remain missing.
 
 ## Resume and extension behavior
 
@@ -37,4 +38,4 @@ Create a resumable, private source of truth that the other Application Agent ski
 
 ## Completion criteria
 
-Setup is complete only when the System Index resolves to an existing private root folder, Ground Truth Database, tracker, current-CV folder, in-progress folder, and submitted archive folder; selected tracker tabs exist; a current CV is identified or explicitly marked missing; and unresolved profile facts are listed accurately.
+Setup is complete only when the System Index resolves to an existing private root folder, Ground Truth Database, tracker, current-CV folder, supporting-materials folder, in-progress folder, and submitted archive folder; selected tracker tabs exist; a current CV is identified or explicitly marked missing; and unresolved profile facts and materials are listed accurately.

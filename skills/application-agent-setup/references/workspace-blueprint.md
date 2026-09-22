@@ -55,6 +55,7 @@ Create these tabs:
 - `Research & Publications`
 - `Awards & Activities`
 - `Links`
+- `Materials Inventory`
 - `Reusable Answers`
 - `Change Log`
 

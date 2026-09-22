@@ -23,6 +23,10 @@ Requirements:
 - Create the private folder structure, System Index, Ground Truth Database,
   and only the tracker tabs needed for my selected application types.
 - Ask me to upload my current CV into the created CV folder.
+- Build a materials inventory for my selected application types, tell me what
+  useful foundational files are missing, and ask me to upload them into the
+  correct private folders. Do not request high-risk identity or financial
+  documents during general setup.
 - Extract only facts supported by that CV, show me the inferred identity and
   contact fields, explicitly confirm my legal given and family names, ask for
   relevant missing facts, and record provenance for every value.
@@ -52,7 +56,7 @@ Application Agent — Your Name/
 └── 05 Templates/
 ```
 
-The tracker always has a dashboard and creates only the tabs you select. The ground-truth sheet stores each fact with a verification state and source. The System Index lets the installed skills discover the right private files without modifying the public skill code.
+The tracker always has a dashboard and creates only the tabs you select. The ground-truth sheet stores each fact with a verification state and source, plus a lane-specific materials inventory. The System Index lets the installed skills discover the right private files without modifying the public skill code.
 
 ## Included skills
 
