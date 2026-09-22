@@ -66,7 +66,7 @@ Columns:
 
 Use `Required`, `Recommended`, or `Optional` for priority and `Current`, `Missing`, `Outdated`, or `Not applicable` for status. Seed only materials relevant to active lanes:
 
-- all lanes: current general CV or resume
+- all lanes: current general/master CV or resume; application-specific CVs are generated per opportunity and stored separately
 - jobs: role-specific resume, portfolio, and work samples when relevant
 - degrees: transcripts, degree certificates, research statement/proposal, writing sample, and reference-letter plan
 - scholarships/fellowships: transcripts, enrollment evidence, essays, references, and budget only when commonly required by the selected opportunities

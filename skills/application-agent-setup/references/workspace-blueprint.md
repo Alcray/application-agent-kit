@@ -10,7 +10,7 @@ Application Agent — <Name>/
 │   └── Application Tracker — <Name>           Google Sheet
 ├── 01 CVs & Resumes/
 │   ├── General/
-│   └── Role-specific/
+│   └── Application CVs/
 ├── 02 Supporting Materials/
 │   ├── Transcripts & Certificates/
 │   ├── References & Letters/
@@ -20,7 +20,7 @@ Application Agent — <Name>/
 └── 05 Templates/
 ```
 
-Do not change sharing while creating or repairing the tree. If the user already has equivalent folders, prefer linking them from the System Index over copying files.
+Do not change sharing while creating or repairing the tree. If the user already has equivalent folders, prefer linking them from the System Index over copying files. In particular, accept a legacy root-level `Application CVs` folder and a root-level `Archived Applications` folder; link them as the canonical resources rather than moving or duplicating their contents.
 
 ## System Index
 
@@ -32,7 +32,7 @@ The index is private configuration, not a narrative profile. Include:
 - Ground Truth Database link
 - Application Tracker link
 - General CV folder link
-- Role-specific CV folder link
+- Application CVs folder link
 - Supporting Materials folder link
 - In Progress folder link
 - Submitted Applications folder link
@@ -81,35 +81,37 @@ Use a real date value wherever the value is a date. Freeze and filter the header
 
 ### Jobs
 
-`Role | Organization | Location | Work Mode | Employment Type | Deadline | Status | Next Action | Next Action Date | Application Link | Application Archive | Contact | Last Update`
+`Role | Organization | Location | Work Mode | Employment Type | Deadline | Status | Next Action | Next Action Date | Application Link | Tailored CV | Application Archive | Contact | Last Update`
 
 ### Degrees
 
-`Program | Institution | Degree | Start Term | Location | Deadline | Funding | Status | Next Action | Next Action Date | Application Link | Application Archive | Last Update`
+`Program | Institution | Degree | Start Term | Location | Deadline | Funding | Status | Next Action | Next Action Date | Application Link | Tailored CV | Application Archive | Last Update`
 
 ### Scholarships & Fellowships
 
-`Opportunity | Organization | Host / Location | Dates | Deadline | Funding | Status | Next Action | Next Action Date | Application Link | Application Archive | Last Update`
+`Opportunity | Organization | Host / Location | Dates | Deadline | Funding | Status | Next Action | Next Action Date | Application Link | Tailored CV | Application Archive | Last Update`
 
 ### Grants
 
-`Grant | Funder | Track | Amount | Deadline | Applicant Type | Status | Next Action | Next Action Date | Application Link | Application Archive | Last Update`
+`Grant | Funder | Track | Amount | Deadline | Applicant Type | Status | Next Action | Next Action Date | Application Link | Tailored CV | Application Archive | Last Update`
 
 ### Events & Workshops
 
-`Event | Organizer / Location | Event Dates | Deadline | Funding / Fee | Status | Next Action | Next Action Date | Application Link | Application Archive | Last Update`
+`Event | Organizer / Location | Event Dates | Deadline | Funding / Fee | Status | Next Action | Next Action Date | Application Link | Tailored CV | Application Archive | Last Update`
 
 ### Hackathons & Competitions
 
-`Event | Organizer / Location | Team | Event Dates | Deadline | Prize / Funding | Status | Next Action | Next Action Date | Application Link | Application Archive | Last Update`
+`Event | Organizer / Location | Team | Event Dates | Deadline | Prize / Funding | Status | Next Action | Next Action Date | Application Link | Tailored CV | Application Archive | Last Update`
 
 ### Custom lane
 
 Start with:
 
-`Opportunity | Organization | Location | Date / Deadline | Status | Next Action | Next Action Date | Application Link | Application Archive | Last Update`
+`Opportunity | Organization | Location | Date / Deadline | Status | Next Action | Next Action Date | Application Link | Tailored CV | Application Archive | Last Update`
 
 Add fields only when the user's lane genuinely needs them.
+
+When upgrading an existing tracker, insert `Tailored CV` immediately before `Application Archive` only after checking dependent formulas, validation, and formatting. Preserve all existing rows and migrate any CV links already stored in notes; do not create duplicate opportunity rows.
 
 ## Dashboard
 

@@ -20,7 +20,7 @@ Create a resumable, private source of truth that the other Application Agent ski
 
 1. Ask only: `What name should I use for you and for your private application workspace?`
 2. Then ask which application lanes they expect to use. Offer multiple selection in plain language: jobs/internships; degrees (bachelor's, master's, PhD, or other); scholarships/fellowships; grants; conferences/workshops/research schools; hackathons/competitions; and a custom lane.
-3. Read [references/workspace-blueprint.md](references/workspace-blueprint.md), create or resume the Drive structure, and create tracker tabs only for the selected lanes. Record the selected lanes in the System Index so the other skills adapt without rewriting their installed files.
+3. Read [references/workspace-blueprint.md](references/workspace-blueprint.md), create or resume the Drive structure, including separate `General` and `Application CVs` locations, and create tracker tabs only for the selected lanes. Record the selected lanes in the System Index so the other skills adapt without rewriting their installed files.
 4. Give the user the link to `01 CVs & Resumes/General`, and ask them to upload their current CV or resume there. If a current CV already exists, show the candidate filename and ask whether to use it. Do not continue extraction until the user identifies the current file.
 5. Read [references/profile-schema.md](references/profile-schema.md). Extract supported facts with provenance into the Ground Truth Database. Use `Candidate` for ambiguous or inferred values and `Verified from source` only for exact statements supported by the CV.
 6. Present one compact confirmation block containing the extracted preferred name, possible legal given/family names, primary email, phone, current education, current role, and important links. Explicitly ask the user to confirm or correct the legal-name fields.
@@ -38,4 +38,4 @@ Create a resumable, private source of truth that the other Application Agent ski
 
 ## Completion criteria
 
-Setup is complete only when the System Index resolves to an existing private root folder, Ground Truth Database, tracker, current-CV folder, supporting-materials folder, in-progress folder, and submitted archive folder; selected tracker tabs exist; a current CV is identified or explicitly marked missing; and unresolved profile facts and materials are listed accurately.
+Setup is complete only when the System Index resolves to an existing private root folder, Ground Truth Database, tracker, general/master-CV folder, Application CVs folder, supporting-materials folder, in-progress folder, and submitted archive folder; selected tracker tabs exist; a current master CV is identified or explicitly marked missing; and unresolved profile facts and materials are listed accurately.

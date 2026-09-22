@@ -14,6 +14,7 @@ SKILLS = {
     "application-agent-setup",
     "apply-person",
     "check-application-status",
+    "tailor-application-cv",
 }
 FORBIDDEN_TEXT = (
     "[" + "TODO:",

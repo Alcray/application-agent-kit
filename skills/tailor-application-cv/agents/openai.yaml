@@ -1,0 +1,6 @@
+interface:
+  display_name: "Tailor Application CV"
+  short_description: "Create a verified CV for one opportunity"
+  default_prompt: "Use $tailor-application-cv to tailor my CV for this opportunity."
+policy:
+  allow_implicit_invocation: true

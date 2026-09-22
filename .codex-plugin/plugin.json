@@ -1,6 +1,6 @@
 {
   "name": "application-agent-kit",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A privacy-first system for setting up, preparing, reviewing, tracking, and monitoring personal applications.",
   "author": {
     "name": "Alcray",
@@ -32,7 +32,7 @@
     "defaultPrompt": [
       "Set up my private application system.",
       "Prepare this application for final review.",
-      "Check my application statuses."
+      "Tailor my CV for this opportunity."
     ],
     "brandColor": "#2563EB"
   }
